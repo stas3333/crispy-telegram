@@ -28,7 +28,8 @@ type Training struct {
 // количество_повторов * длина_шага / м_в_км
 func (t Training) distance() float64 {
 	// вставьте ваш код ниже
-	return float64(t.Action) * t.LenStep / MInKm
+	
+	return float64(t.Action) * t.LenStep / MInKm //Изменил LenStep на t.LenStep
 }
 
 // meanSpeed возвращает среднюю скорость бега или ходьбы.
